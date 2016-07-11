@@ -1,8 +1,9 @@
 <div>
   <h3>Albums</h3>
-  <div class="row">
-    <div class="col-xs-4" ng-repeat="album in albums">
-      <a class="thumbnail" ui-sref="album({albumId: album.id})">
+  <album-list albums="albums"></album-list>
+  <!-- <div class="row">
+    <div class="col-xs-4" ng-repeat="album in albums"> -->
+      <!-- <a class="thumbnail" ui-sref="album({albumId: album.id})">
         <img ng-src="{{ album.imageUrl }}">
         <div class="caption">
           <h5>
@@ -10,7 +11,8 @@
           </h5>
           <small>{{ album.songs.length }} songs</small>
         </div>
-      </a>
-    </div>
-  </div>
+      </a> -->
+      <!-- <album-list albums="albums"></album-list>
+    </div> -->
+<!--   </div> -->
 </div>
